@@ -1,0 +1,21 @@
+<h2> Posts </h2>
+
+    <ul>
+
+        <% @posts.each do |post| %>
+            <% if user_signed_in? %>
+                <li>
+                    <strong><%= link_to post.title, post %></strong> authored by <%=current_user.username%>
+                </li>
+            <%else%>
+                <li>
+                    <strong><%= link_to post.title, post %></strong>
+                </li>
+            <%end%>
+        <% end %>
+</ul>
+
+
+<%= link_to 'New Post', new_post_path %>
+
+

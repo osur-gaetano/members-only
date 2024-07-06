@@ -1,0 +1,7 @@
+<h1> <%= @post.title %> </h1>
+
+<p><%= @post.body %>
+
+<ul>
+    <li> <%= link_to 'All posts', posts_path(@post) %></li>
+</ul>
