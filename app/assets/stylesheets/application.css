@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+body{
+    margin: 0;
+}
+
+ nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(44, 175, 96);
+    color: antiquewhite;
+    padding: .6rem;
+ }
+
+ a, a:visited{
+    text-decoration: none;
+    color: rgb(114, 235, 48)
+ }
+ 
+ a:hover, a:focus{
+    color: goldenrod;
+ }
+
+ .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+.form_container{
+    margin-left: auto;
+    margin-right: auto;
+}
